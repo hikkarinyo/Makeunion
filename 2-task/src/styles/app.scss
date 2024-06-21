@@ -1,0 +1,54 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #196ec3, #209cff);
+
+  &__container {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+
+  &__footer {
+    margin-top: 20px;
+  }
+
+  &__taskCount {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+
+  &__clearButton {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,56 @@
+.add-todo {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+
+  &__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: #333333;
+
+    &--error {
+      border-color: #d32f2f;
+      animation: shake 0.3s ease-in-out;
+    }
+  }
+
+  &__button {
+    background: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__error {
+    color: #d32f2f;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    animation: fadeIn 0.3s ease-in-out;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
