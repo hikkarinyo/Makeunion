@@ -17,13 +17,13 @@
 1. Клонируйте репозиторий:
 
     ```bash
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/hikkarinyo/Makeunion.git
     ```
 
 2. Перейдите в директорию проекта:
 
     ```bash
-    cd 2 task
+    cd 2-task
     ```
 
 3. Установите зависимости:
