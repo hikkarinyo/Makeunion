@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url("./images/background.jpg");
+}
+
+.card {
+    position: absolute;
+    background: rgba(217, 217, 217, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border: 1px solid #FFFFFF;
+    gap: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-image: url("./images/profile.png");
+    width: 205px;
+    height: 205px;
+}
+
+.name {
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+        color: #e2eac3;
+    }
+}
